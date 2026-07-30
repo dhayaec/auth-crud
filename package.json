@@ -12,7 +12,9 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "test:e2e": "tsx --test tests/e2e/*.test.ts",
+    "test": "tsx --test tests/e2e/*.test.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
